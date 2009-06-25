@@ -1,0 +1,27 @@
+[color]
+        diff = auto
+        status = auto
+        branch = auto
+        log = auto
+        blame = auto
+
+[alias]
+        st = status
+        ci = commit -v
+        addi = add --interactive
+        br = branch
+        co = checkout
+        svnpush = svn dcommit
+        svnpull = svn rebase
+        pick = cherry-pick -s
+        blame = blame -w
+        praise = blame -w
+        up = !git stash && git pull origin master && git stash apply
+        plog = !git log --pretty=format:'%C(yellow)%h%Creset %s %Cblue%d%Creset' --graph --all
+        who = shortlog -se --
+        save = stash save
+        pop = stash pop
+
+[branch]
+        autosetupmerge = true
+        
